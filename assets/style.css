@@ -1,0 +1,81 @@
+*{
+    background-color: #130227;
+}
+
+/* ////////////////////// Espacio ////////////////////// */
+
+.banner {
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+}
+
+/* ////////////////////// Espacio ////////////////////// */
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+
+    animation-name: pulso;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.boton img {
+    width: 75vw;
+    margin-bottom: 2vw;
+}
+
+/* ////////////////////// Espacio ////////////////////// */
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.item img {
+    width: 30vw;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    border-radius: 2vw;
+}
+
+.item p {
+    margin: 0 auto;
+    text-align: center;
+    color: aliceblue;
+    font-size: 3vw;
+}
+
+.titulo {
+    margin: 3vw;
+    text-align: center;
+    color: aliceblue;
+    font-size: 5vw;
+    font-weight: bolder;
+
+    box-shadow: 0 0.1vw 0 0 #921eaf;
+}
+
+/* ////////////////////// Espacio ////////////////////// */
+
+
+
+
+/* ////////////////////// Espacio ////////////////////// */
+
+@keyframes pulso {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
